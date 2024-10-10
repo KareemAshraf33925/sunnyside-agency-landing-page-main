@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Fraunces", serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+:root{
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Darkdesaturatedcyangraphicdesigntext: hsl(167, 40%, 24%);
+    --Darkbluephotographytext: hsl(198, 62%, 26%);
+    --Darkmoderatecyanfooter: hsl(168, 34%, 41%);
+    --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+    --Verydarkgrayishblue: hsl(213, 9%, 39%);
+    --Darkgrayishblue: hsl(232, 10%, 55%);
+    --Grayishblue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+/* start_header */
+header{
+    background-image: url(images/desktop/image-header.jpg);
+    background-position:center/center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:120vh;
+}
+header .container{
+    margin:0px;
+    padding: 30px;
+}
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+header .container nav ul{
+    list-style: none;
+}
+header .container nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+header .container nav ul li a{
+    text-decoration: none;
+    color: var(--White);
+    font-size: 18px;
+    font-weight: 600;
+    font-family:"Fraunces";
+}
+header .container nav ul li:last-child a{
+    background-color:var(--White);
+    color:black;
+    border-radius: 20px;
+    padding:10px;
+    transition: all 0.6s;
+}
+header .container nav ul li:last-child a:hover{
+    background-color: transparent;
+    color: var(--White);
+}
+header .container nav .icon-hamburger{
+    display: none;
+}
+
+header .container  .creative{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 200px;
+}
+header .container  .creative h1{
+    color: var(--White);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    letter-spacing: 20px;
+}
+/* end_header */
+/* start_main */
+main .transform_brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+main .transform_brand .transform h2{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    margin: 0 150px 30px;
+}
+main .transform_brand .transform p{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Fraunces";
+    margin: 0 40px 30px 140px;
+    line-height:30px;
+}
+main .transform_brand .transform .Learn_more{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    margin: 0 40px 30px 140px;
+}
+main .transform_brand img{
+    width: 675px;
+}
+main .stand_out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+main .stand_out img{
+    width: 675px;
+}
+main .stand_out .stand h2{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    margin: 0 150px 30px;
+}
+main .stand_out .stand p{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Fraunces";
+    margin: 0 40px 30px 140px;
+    line-height:30px;
+}
+main .stand_out .stand .Learn_more{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    margin: 0 40px 30px 140px;
+}
+main .Graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+main .Graphic .Graphicdesign{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-position:center/center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 480px;
+    width: 815px;
+}
+main .Graphic .Graphicdesign h2{
+    margin-top: 350px;
+}
+main .Graphic .Graphicdesign p{
+    margin: 20px 150px;
+}
+main .Graphic .Photography{
+    background-image: url(images/desktop/image-photography.jpg);
+    background-position:center/center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 480px;
+    width: 815px;
+}
+main .Graphic .Photography h2{
+    margin-top: 350px;
+}
+main .Graphic .Photography p{
+    margin: 20px 150px;
+}
+main .Clienttestimonials{
+    text-align: center;
+    padding: 100px;
+}
+main .Clienttestimonials h3{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Fraunces";
+}
+main .Clienttestimonials .testimonials_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 0;
+}
+main .Clienttestimonials .testimonials_row .col_1 img{
+    border-radius: 50%;
+    width: 100px;
+}
+main .Clienttestimonials .testimonials_row .col_1  p{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    margin: 70px 30px 50px;
+    line-height: 25px;
+}
+main .Clienttestimonials .testimonials_row .col_1 label{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Fraunces";
+}
+main .Clienttestimonials .testimonials_row .col_1 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    opacity: 0.5;
+    margin-top: 20px;
+}
+main .Clienttestimonials .testimonials_row .col_2 img{
+    border-radius: 50%;
+    width: 100px;
+}
+main .Clienttestimonials .testimonials_row .col_2  p{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    margin: 70px 30px 50px;
+    line-height: 25px;
+}
+main .Clienttestimonials .testimonials_row .col_2 label{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Fraunces";
+}
+main .Clienttestimonials .testimonials_row .col_2 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    opacity: 0.5;
+    margin-top: 20px;
+}
+main .Clienttestimonials .testimonials_row .col_3 img{
+    border-radius: 50%;
+    width: 100px;
+}
+main .Clienttestimonials .testimonials_row .col_3  p{
+    color: var(--Darkdesaturatedcyangraphicdesigntext);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    margin: 70px 0px 50px;
+    line-height: 25px;
+}
+main .Clienttestimonials .testimonials_row .col_3 label{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Fraunces";
+}
+main .Clienttestimonials .testimonials_row .col_3 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    opacity: 0.5;
+    margin-top: 20px;
+}
+/* end_main */
+/* start_gallary */
+.gallary{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.gallary img{
+    width: 337px;
+}
+/* end_gallary */
+/* start_footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var( --Darkmoderatecyanfooter);
+}
+footer .logo_footer{
+    margin-top: 50px;
+    color:var(--Darkbluephotographytext) ;
+}
+footer .content_links{
+    list-style: none;
+}
+footer .content_links li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+    color:var( --Grayishblue) ;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Fraunces";
+    cursor: pointer;
+}
+footer .social_links{
+    list-style: none;
+    padding-bottom: 40px;
+}
+footer .social_links li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+/* end_footer */
+@media(max-width:768px){
+   
+    header {
+        background-size: contain;
+        height: 427px;
+      }
+       header .container .creative h1 {
+        text-align: center;
+      }
+      header .container .creative h1 {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 10px;
+      }
+      header .container .creative {
+        gap: 0px;
+        margin-top: 70px;
+      }
+      header .container .creative h1 {
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: 10px;
+      }
+      main .transform_brand img {
+        width: 447px;
+        height: 443px;
+      }
+      main .stand_out img {
+        width: 447px;
+        height: 443px;
+      }
+      main .stand_out .stand p {
+        margin: 0 40px 30px 63px;
+      }
+      main .stand_out .stand h2 {
+        margin: 0 235px 30px 64px;
+      }
+      main .Graphic .Graphicdesign {
+        background-size: contain;
+        width: 392px;
+      }
+      main .Graphic .Photography {
+        background-size: contain;
+        width: 376px;
+      }
+      main .Graphic .Graphicdesign h2 {
+        margin-top: 182px;
+      }
+      main .Graphic .Graphicdesign p {
+        margin: 18px 14px;
+      }
+      main .Graphic .Photography h2 {
+        margin-top: 182px;
+      }
+      main .Graphic .Photography p {
+        margin: 18px 14px;
+      }
+      main .Clienttestimonials {
+        text-align: center;
+        padding: 0px;
+      }
+      .gallary img {
+        width: 384px;
+      }
+}
+@media(max-width:480px){
+    header {
+        height: 260px;
+      }
+    header .container nav .icon-hamburger {
+        display: block;
+        cursor: pointer;
+        transition: all 0.8s;
+      }
+      header .container nav .items {
+        position: absolute;
+        top: 67px;
+        right:47px;
+        background-color: var(--White);
+        width: 250px;
+        height: 195px;
+        text-align: center;
+       opacity: 0;
+        transition: all 0.8s;
+      }
+      header .container nav .items.active{
+       opacity: 1;
+      }
+      header .container nav .items::before{
+        content: "";
+        border-bottom: 10px solid var(--White);
+        border-top: 10px solid transparent;
+        border-right: 10px solid var(--White);
+        border-left: 10px solid transparent;
+        position: absolute;
+        top: -14px;
+        right: 0px;
+      }
+      header .container nav .items .item {
+        display: block;
+        margin-top: 20px;
+      }
+      header .container nav .items .item .item_link {
+        color:var(--Grayishblue);
+      }
+      header .container nav .items .item:last-child .item_link {
+        background-color: var(--Yellow);
+        color:var(--Verydarkdesaturatedblue);
+        padding: 10px 20px;
+        transition: all 0.6s;
+      }
+      header .container nav .items .item:last-child .item_link:hover{
+        background: transparent;
+        color:var(--Grayishblue);
+      }
+      header .container .creative {
+        gap: 0px;
+        margin-top: 6px;
+      }
+      header .container .creative h1 {
+        text-align: center;
+        font-size: 24px;
+      }
+      main .transform_brand {
+        flex-direction: column-reverse;
+      }
+      main .transform_brand img {
+        width: 480px;
+      }
+      main .transform_brand .transform{
+        text-align: center;
+      }
+      main .transform_brand .transform h2 {
+        margin: 39px 81px 30px;
+      }
+      main .transform_brand .transform p {
+        margin: 0px 25px 30px 37px;
+      }
+      main .transform_brand .transform .Learn_more {
+        margin: 0 49px 30px 62px;
+      }
+      main .stand_out {
+        flex-direction: column;
+      }
+      main .stand_out img {
+        width: 481px;
+      }
+      main .stand_out .stand{
+        text-align: center;
+      }
+      main .stand_out .stand h2 {
+        margin: 40px 71px 30px 64px;
+      }
+      main .stand_out .stand .Learn_more {
+        margin: 0 40px 30px 67px;
+      }
+      main .Graphic {
+        flex-direction: column;
+      }
+      main .Graphic .Graphicdesign {
+        width: 478px;
+        height: 399px;
+      }
+      main .Graphic .Graphicdesign h2 {
+        margin-top: 216px;
+      }
+      main .Graphic .Photography {
+        background-size: contain;
+        width: 484px;
+      }
+      main .Graphic .Photography h2 {
+        margin-top: 244px;
+      }
+      main .Clienttestimonials .testimonials_row {
+        flex-direction: column;
+        gap: 30px;
+      }
+      .gallary img {
+        width: 480px;
+      }
+      footer .content_links {
+        margin-left: 40px;
+      }
+      footer .social_links {
+        margin-left: 36px;
+      }
+}
+@media(max-width:375px){
+    header {
+        height: 209px;
+      }
+      header .container .creative h1 {
+        font-size: 20px;
+      }
+      header .container nav img{
+        width: 70px;
+      }
+      header .container nav .icon-hamburger {
+        width: 25px;
+      }
+      header .container .creative img{
+        width: 15px;
+      }
+      main .transform_brand img {
+        width: 375px;
+      }
+      main .stand_out img {
+        width: 375px;
+      }
+      main .Graphic .Graphicdesign {
+        width: 375px;
+        height: 313px;
+      }
+      main .Graphic .Graphicdesign h2 {
+        margin-top: 163px;
+      }
+      main .Graphic .Photography {
+        width: 375px;
+      }
+      main .Graphic .Photography h2 {
+        margin-top: 173px;
+      }
+      main .transform_brand .transform h2 {
+        font-size: 19px;
+      }
+      main .stand_out .stand h2 {
+        font-size: 20px;
+      }
+      main .Graphic .Graphicdesign p {
+        margin: 18px 67px;
+      }
+      main .Graphic .Photography p {
+        margin: 18px 41px;
+      }
+      main .Clienttestimonials h3 {
+        font-size: 25px;
+      }
+      main .Clienttestimonials .testimonials_row .col_3 p {
+        margin: 70px 26px 50px;
+      }
+      .gallary img {
+        width: 375px;
+      }
+      header .container nav .items {
+        width: 309px;
+      }
+
+}
